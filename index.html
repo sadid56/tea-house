@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!--! daisy ui link and tailwindcss link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--! manrope google font cdn link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Tea House BD</title>
+    <!--! tailwind basic customize -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            
+            }
+          }
+        }
+      </script>
+    <style>
+        body{
+            font-family: 'Manrope', sans-serif;
+        }
+       
+    </style>
+</head>
+<body>
+    <!--* header part start -->
+    <header class=" h-[100vh] max-w-screen-xl m-auto">
+        <!--* navbar -->
+        <nav class="shadow-md hover:shadow-lg">
+            <div class="navbar ">
+                <div class="flex-1">
+                  <a class=" normal-case text-xl md:text-3xl font-extrabold text-emerald-500">Tea House</a>
+                </div>
+                <div class="mr-4 flex-1">
+                    <input type="text" placeholder="Search..." class="input input-bordered w-full max-w-xs" />>
+                </div>
+                <div class="flex-none">
+                  <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                      <div class="indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                        <span class="badge badge-sm indicator-item">8</span>
+                      </div>
+                    </label>
+                    <div tabindex="0" class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
+                      <div class="card-body">
+                        <span class="font-bold text-lg">8 Items</span>
+                        <span class="text-info">Subtotal: $999</span>
+                        <div class="card-actions">
+                          <button class="btn btn-primary btn-block">View cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                      <div class="w-10 rounded-full">
+                        <img src="./images/favicon.ico" />
+                      </div>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li>
+                        <a class="justify-between">
+                          Profile
+                          <span class="badge">New</span>
+                        </a>
+                      </li>
+                      <li><a>Settings</a></li>
+                      <li><a>Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </nav>
+        <!--* hero part -->
+            <div class=" flex flex-col gap-9 md:flex-row-reverse items-center h-[calc(100vh-66px)] px-5 md:px-9 lg:px-14">
+              <div class="flex-1">
+                <img src="./images/banner.png" class="w-full " />
+
+                 <!--! rating disabled -->
+                <!-- <div class="rating rating-lg rating-half bg-white shadow-md relative top-[-50px] rounded-md p-9">  
+                    <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 " />
+                    <div>
+                        <h1>5.00</h1>
+                        <p>Trust Pilot Ratings</p>
+                    </div> -->
+                    </div>
+                    <div class="flex-1">
+                        <h1 class="text-4xl md:text-7xl font-bold text-[#1C1C1C]">It's good 
+                            tea time at The Tea House</h1>
+                        <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                        <button class="btn bg-gradient-to-r from-[#F00] to-[#FF8938] text-white">Explore More <span>&#8599;</span></button>
+                      </div>
+              
+              </div>     
+    </header>
+</body>
+</html>
